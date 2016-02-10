@@ -1,11 +1,11 @@
 {
   "name": "jsck",
-  "version": "0.3.0",
+  "version": "0.3.2",
   "description": "JSON Schema Compiled checK - FE",
   "scripts": {
     "test": "coffee test",
     "prepublish": "coffee tasks/build",
-    "build": "duo -g jsck --use duo-uglify lib/index.js"
+    "build": "duo --use duo-uglify lib/index.js"
   },
   "main": "build/lib/index.js",
   "files": [
