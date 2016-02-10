@@ -311,7 +311,7 @@ module.exports = ({schema_uri, mixins}) ->
 
 
     is_schema: (object) ->
-      object && (object.type? || object.$ref? ||
+      object? && (object.type? || object.$ref? ||
         object.allOf? || object.anyOf? || object.not?)
 
     recursive_test: (schema, {scope, pointer}) ->
